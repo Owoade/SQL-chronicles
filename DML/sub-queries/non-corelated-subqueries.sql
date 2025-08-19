@@ -31,8 +31,6 @@ SELECT * FROM outer_table
 WHERE outer_table.col >= (
     SELECT inner_col FROM inner_col;
 ) 
-
-
 -- ... other query patterns
 
 
