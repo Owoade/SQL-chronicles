@@ -17,4 +17,13 @@ WITH RECURSIVE query1 (x) AS (
 SELECT MAX(x) as max_x FROM query1;
 
 
+-- Example 2
+WITH RECURSIVE factorial(n, fact) AS (
+    SELECT 1 as n, 1 as fact
+    UNION ALL
+    SELECT n + 1, fact * (n+1) from factorial
+    WHERE n < 10
+)
+SELECT * FROM factorial;
+
 
