@@ -30,6 +30,6 @@ SELECT * from left_table LEFT JOIN right_table on left_table.common_id = right_t
   GROUP BY and HAVING can only be used in each query and cannot affect final result
   ORDER BY can only be used in the last SELECT statement
 */
-SELECT name, email, phone_number, "First and Best" as University
+SELECT name, email, phone_number, "First and Best" as University from UI_Students
 UNION
-SELECT name, email, phone_number, "Others";
+SELECT name, email, phone_number, "Others" FROM Other_Students;
