@@ -1,0 +1,2 @@
+The purpose of using ROLLUP is to generate subtotals and a grand total in a single query, by progressively aggregating data at multiple levels of grouping.
+See example.sql
