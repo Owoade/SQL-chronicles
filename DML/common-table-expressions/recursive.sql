@@ -26,4 +26,11 @@ WITH RECURSIVE factorial(n, fact) AS (
 )
 SELECT * FROM factorial;
 
+-- Example 3
+WITH RECURSIVE employee_hierachy AS (
+    SELECT id, name, manager_id, 1 as level FROM employees WHERE manager_id IS NULL
+    UNION ALL
+    SELECT e.id, e.name, e.manager_id, eh+1 FROM employees INNER JOIN employee_hierachy eh on eh.id = e.manager_id
+)
+SELECT * FROM employee_hierachy ORDER BY level, name;
 
