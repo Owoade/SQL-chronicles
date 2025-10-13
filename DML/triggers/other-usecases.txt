@@ -1,0 +1,2 @@
+- To enforce complex bussiness on the database level
+- To synchronize tables
