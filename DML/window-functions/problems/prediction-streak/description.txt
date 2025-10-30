@@ -1,0 +1,1 @@
+Find the longest consecutive sequence of correct predictions for each team, ordered chronologically by date.
