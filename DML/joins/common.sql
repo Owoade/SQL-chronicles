@@ -24,6 +24,15 @@ SELECT * from table1 FULL OUTER JOIN table2 ON table1.col = table2.col;
 -- Excluding join
 SELECT * from left_table LEFT JOIN right_table on left_table.common_id = right_table.common_id WHERE right_table.common_id IS NULL;
 
+-- CROSS JOIN
+WITH vars AS (
+  SELECT 
+    1000000 amount,
+    '2024-12-31'::date date,
+    'Alphabet LLC' customer 
+)
+select * from sales, vars WHERE sales.amount >= vars.amount AND sales.date > vars.date AND sales.customer_name = vars.customer; 
+
 -- UNIONS
 /*
   UNION ALL includes duplicates
