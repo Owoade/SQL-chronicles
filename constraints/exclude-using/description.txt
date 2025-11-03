@@ -1,0 +1,1 @@
+Ensures that no two rows violate a specified relationship — typically used to prevent overlaps or conflicts between rows.
