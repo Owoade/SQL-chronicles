@@ -15,4 +15,4 @@ MySQL vs PostgreSQL: LIMIT and OFFSET differences
             Example: SELECT * FROM users LIMIT 10 OFFSET 5; -- ✅ Valid
                      SELECT * FROM users OFFSET 5 LIMIT 10; -- ✅ Valid
 */
-SELECT cols FROM table_name LIMIT limit_value OFFSET offset_value
+SELECT cols FROM table_name LIMIT limit_value OFFSET offset_value;
