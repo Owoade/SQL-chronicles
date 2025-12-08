@@ -1,3 +1,4 @@
+-- This query return each season's driver and constructor's champion
 WITH points AS (
 	SELECT 
 		year AS season, 
