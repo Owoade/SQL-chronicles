@@ -1,0 +1,11 @@
+{
+    "type": "snapshot",
+    "channel": "@whaleMovement",
+    "timestamp": "2025-12-08 09:22:34.559123274 +0000 UTC",
+    "data": {
+        "positions": [],
+        "alerts": [],
+        "btc_etf_flow": [],
+        "eth_etf_flow": []
+    }
+}
